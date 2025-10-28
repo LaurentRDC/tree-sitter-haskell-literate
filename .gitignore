@@ -1,0 +1,28 @@
+# Build outputs
+build/
+
+# Node modules
+node_modules/
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Test outputs
+test/output/
+*.log
+
+# Compiled Object files
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+
+# Precompiled Headers
+*.gch
+*.pch

@@ -1,0 +1,200 @@
+[
+  {
+    "type": "bird_line",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "haskell_code",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "blank_line",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "haskell_code",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "latex_begin",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "latex_code_block",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "blank_line",
+          "named": true
+        },
+        {
+          "type": "latex_begin",
+          "named": true
+        },
+        {
+          "type": "latex_code_line",
+          "named": true
+        },
+        {
+          "type": "latex_end",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "latex_code_line",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "haskell_code",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "latex_end",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "markdown_begin",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "markdown_code_block",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "blank_line",
+          "named": true
+        },
+        {
+          "type": "markdown_begin",
+          "named": true
+        },
+        {
+          "type": "markdown_code_line",
+          "named": true
+        },
+        {
+          "type": "markdown_end",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "markdown_code_line",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "haskell_code",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "markdown_end",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "prose_line",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "bird_line",
+          "named": true
+        },
+        {
+          "type": "blank_line",
+          "named": true
+        },
+        {
+          "type": "latex_code_block",
+          "named": true
+        },
+        {
+          "type": "markdown_code_block",
+          "named": true
+        },
+        {
+          "type": "prose_line",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": " ",
+    "named": false
+  },
+  {
+    "type": "%",
+    "named": false
+  },
+  {
+    "type": "<",
+    "named": false
+  },
+  {
+    "type": ">",
+    "named": false
+  },
+  {
+    "type": "\\begin{code}",
+    "named": false
+  },
+  {
+    "type": "\\end{code}",
+    "named": false
+  },
+  {
+    "type": "```",
+    "named": false
+  },
+  {
+    "type": "```haskell",
+    "named": false
+  }
+]

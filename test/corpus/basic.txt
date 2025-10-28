@@ -1,0 +1,158 @@
+================================================================================
+Bird-style with shebang
+================================================================================
+#!/usr/bin/env runhaskell
+
+This is prose.
+
+> main :: IO ()
+> main = putStrLn "Hello"
+
+More prose here.
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (prose_line)
+  (blank_line)
+  (prose_line)
+  (blank_line)
+  (bird_line (haskell_code))
+  (bird_line (haskell_code))
+  (blank_line)
+  (prose_line))
+
+================================================================================
+Inverted Bird-style
+================================================================================
+This is prose.
+
+< main :: IO ()
+< main = putStrLn "Hello"
+
+More prose here.
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (prose_line)
+  (blank_line)
+  (bird_line (haskell_code))
+  (bird_line (haskell_code))
+  (blank_line)
+  (prose_line))
+
+================================================================================
+LaTeX-style code block
+================================================================================
+This is a literate program.
+
+\begin{code}
+module Main where
+
+main :: IO ()
+main = putStrLn "Hello, World!"
+\end{code}
+
+And more documentation.
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (prose_line)
+  (blank_line)
+  (latex_code_block
+    (latex_begin)
+    (latex_code_line (haskell_code))
+    (blank_line)
+    (latex_code_line (haskell_code))
+    (latex_code_line (haskell_code))
+    (latex_end))
+  (blank_line)
+  (prose_line))
+
+================================================================================
+LaTeX-style code block with comment to turn off typechecking
+================================================================================
+This is a literate program.
+
+\begin{code}% don't typecheck this code block
+module Main where
+
+main :: IO ()
+main = putStrLn "Hello, World!"
+\end{code}
+
+And more documentation.
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (prose_line)
+  (blank_line)
+  (latex_code_block
+    (latex_begin)
+    (latex_code_line (haskell_code))
+    (blank_line)
+    (latex_code_line (haskell_code))
+    (latex_code_line (haskell_code))
+    (latex_end))
+  (blank_line)
+  (prose_line))
+
+================================================================================
+Markdown-style code block
+================================================================================
+This is a literate program.
+
+```haskell
+module Main where
+
+main :: IO ()
+main = putStrLn "Hello, World!"
+```
+
+And more documentation.
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (prose_line)
+  (blank_line)
+  (markdown_code_block
+    (markdown_begin)
+    (markdown_code_line (haskell_code))
+    (blank_line)
+    (markdown_code_line (haskell_code))
+    (markdown_code_line (haskell_code))
+    (markdown_end))
+  (blank_line)
+  (prose_line))
+
+================================================================================
+Simple bird-style
+================================================================================
+> factorial :: Integer -> Integer
+> factorial 0 = 1
+> factorial n = n * factorial (n - 1)
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (bird_line (haskell_code))
+  (bird_line (haskell_code))
+  (bird_line (haskell_code)))
+
+================================================================================
+Bird-style with blank line in code
+================================================================================
+> function1 = value1
+>
+> function2 = value2
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (bird_line (haskell_code))
+  (bird_line)
+  (bird_line (haskell_code)))

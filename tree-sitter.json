@@ -1,0 +1,39 @@
+{
+  "grammars": [
+    {
+      "name": "haskell-literate",
+      "camelcase": "Literate Haskell",
+      "scope": "source.lhs",
+      "path": ".",
+      "file-types": [
+        "lhs"
+      ],
+      "highlights": [
+        "queries/highlights.scm"
+      ],
+      "injection-regex": "^lhs$"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Literate Haskell grammar for tree-sitter",
+    "authors": [
+      {
+        "name": "Laurent P. René de Cotret",
+        "email": "laurent.decotret@outlook.com"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/LaurentRDC/tree-sitter-haskell-literate"
+    }
+  },
+  "bindings": {
+    "c": false,
+    "go": false,
+    "node": true,
+    "python": false,
+    "rust": true,
+    "swift": false
+  }
+}
