@@ -91,7 +91,7 @@ And more documentation.
   (prose_line)
   (blank_line)
   (latex_code_block
-    (latex_begin)
+    (latex_begin (latex_comment))
     (latex_code_line (haskell_code))
     (blank_line)
     (latex_code_line (haskell_code))

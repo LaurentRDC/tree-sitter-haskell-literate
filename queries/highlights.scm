@@ -5,6 +5,9 @@
 (latex_begin) @keyword.directive
 (latex_end) @keyword.directive
 
+; Highlight LaTeX comments like comments
+(latex_comment) @comment
+
 ; Markdown delimiters
 (markdown_begin) @keyword.directive
 (markdown_end) @keyword.directive

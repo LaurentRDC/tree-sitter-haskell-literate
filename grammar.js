@@ -51,9 +51,13 @@ module.exports = grammar({
 			'\\begin\{code\}',
 			// Latex code blocks are ignored by the compiler
 			// if they start with \begin{code}%<whatever>
-			optional(seq('%', /[^\r\n]*/)),
+			optional($.latex_comment),
 			$._newline),
 
+		// We parse latex comments to highlight them
+		// like comments
+		latex_comment: ($) => seq('%', /[^\r\n]*/),
+		
 		latex_end: ($) => seq('\\end\{code\}', $._newline),
 
 		latex_code_line: ($) => seq($.haskell_code, $._newline),

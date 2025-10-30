@@ -27,7 +27,17 @@
   {
     "type": "latex_begin",
     "named": true,
-    "fields": {}
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "latex_comment",
+          "named": true
+        }
+      ]
+    }
   },
   {
     "type": "latex_code_block",
@@ -70,6 +80,11 @@
         }
       ]
     }
+  },
+  {
+    "type": "latex_comment",
+    "named": true,
+    "fields": {}
   },
   {
     "type": "latex_end",
